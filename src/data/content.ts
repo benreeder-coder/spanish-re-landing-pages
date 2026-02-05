@@ -40,7 +40,7 @@ export const content = {
     {
       title: "24/7 AI Voice Agent",
       description:
-        "Takes inbound leads and follows up with past prospects at scale — intelligent qualification, appointment scheduling, and never misses a call.",
+        "Powered by Vapi — takes inbound leads and follows up with past prospects at scale. Intelligent qualification, appointment scheduling, and never misses a call.",
       icon: "phone",
     },
     {
@@ -146,7 +146,7 @@ export const content = {
       {
         question: "What happens after the 30-day guarantee period?",
         answer:
-          "You own the entire system. It's built on Zapier/Make, so your team can maintain it independently. We also offer optional ongoing support packages.",
+          "You own the entire system. It's built on n8n, so your team can maintain it independently. We also offer optional ongoing support packages.",
       },
       {
         question: "Is this GDPR-compliant for EU operations?",
