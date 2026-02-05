@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Blueprint Grid Pattern — Variation 3 */
+.blueprint-grid {
+  background-color: #f0f4f8;
+  background-image: linear-gradient(
+      rgba(0, 51, 102, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(0, 51, 102, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.blueprint-grid-dark {
+  background-color: #003366;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphism Card — Variation 5 */
+.glass-card {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-card-strong {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+  .glass-card {
+    background: rgba(13, 77, 77, 0.9);
+  }
+  .glass-card-strong {
+    background: rgba(13, 77, 77, 0.95);
+  }
+}
+
+/* Brutalist thick borders */
+.brutal-border {
+  border: 4px solid #000;
+}
+
+.brutal-border-thick {
+  border: 6px solid #000;
+}
+
+/* Mediterranean wave divider */
+.wave-divider {
+  position: relative;
+}
+
+.wave-divider::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: currentColor;
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+/* Custom scrollbar for dark themes */
+.dark-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.dark-scroll::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+.dark-scroll::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
